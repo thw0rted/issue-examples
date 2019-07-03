@@ -1,0 +1,17 @@
+{
+  "name": "generic-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.0-dev.20190703"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.2"
+  }
+}
