@@ -1,0 +1,30 @@
+{
+  "name": "pino-reopen-repro",
+  "version": "1.0.0",
+  "description": "Reproduction for pino issue with reopen method",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thw0rted/issue-examples.git"
+  },
+  "keywords": [
+    "pino",
+    "logging",
+    "issue"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thw0rted/issue-examples/issues"
+  },
+  "homepage": "https://github.com/thw0rted/issue-examples#readme",
+  "dependencies": {
+    "pino": "^5.13.3"
+  },
+  "devDependencies": {
+    "@types/pino": "^5.8.10"
+  }
+}
