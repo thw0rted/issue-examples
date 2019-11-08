@@ -14,3 +14,5 @@ This simple server uses client-certificate TLS authentication to illustrate how 
 ## Results
 
 A spec-compliant browser will show that the first test, run with `withCredentials = false`, should fail, because the service on port 8002 requires a client cert, while the second test, run with `withCredentials = true`, should succeed and display the client cert CN.  Non-compliant browsers will make both calls successfully.  If the second test fails, make sure that you can visit the service on port 8002 directly without any errors.
+
+A third test has been added for `fetch` with `credentials = "omit"`.  This should also fail in spec-compliant browsers.

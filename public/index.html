@@ -12,6 +12,11 @@
             XHR, withCredentials = true: &nbsp;
             <span id="out2"></span>
         </p>
+        <hr/>
+        <p>
+            fetch, credentials = omit: &nbsp;
+            <span id="out3"></span>
+        </p>
         <script>
 function makeXHR(out) {
     var xhr = new XMLHttpRequest();
@@ -35,6 +40,21 @@ var out2 = document.getElementById("out2");
 var x2 = makeXHR(out2);
 x2.withCredentials = true;
 x2.send();
+
+if (typeof fetch === "function") {
+    var out3 = document.getElementById("out3");
+    fetch("https://localhost:8002", {credentials: "omit"})
+    .then(function(resp) { return resp.text(); })
+    .then(
+        function(resp) {
+            out3.innerText = "Success: " + resp;
+        },
+        function(err) {
+            out3.innerText = "Error, see console";
+            console.error(err);
+        }
+    );
+}
         </script>
     </body>
 </html>
