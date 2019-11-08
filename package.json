@@ -1,0 +1,27 @@
+{
+  "name": "client-cert-issue",
+  "version": "1.0.0",
+  "description": "Repro for an issue where browser sends client certs with withCredentials=false",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thw0rted/issue-examples.git"
+  },
+  "keywords": [
+    "xhr",
+    "client certificate",
+    "tls"
+  ],
+  "author": "James Bromwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thw0rted/issue-examples/issues"
+  },
+  "homepage": "https://github.com/thw0rted/issue-examples#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

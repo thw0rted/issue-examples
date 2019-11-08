@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p><a href="https://localhost:8002">Visit me first</a> to add self-signed cert exception.</p>
+        <hr/>
+        <p>
+            XHR, withCredentials = false: &nbsp;
+            <span id="out1"></span>
+        </p>
+        <hr/>
+        <p>
+            XHR, withCredentials = true: &nbsp;
+            <span id="out2"></span>
+        </p>
+        <script>
+function makeXHR(out) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState !== 4) { return; }
+        if (xhr.status === 200) {
+            out.innerText = "Success: " + xhr.response;
+        } else {
+            console.log(xhr);
+            out.innerText = "Error, see console";
+        }
+    }
+    xhr.open("GET", "https://localhost:8002");
+    return xhr;
+}
+var out1 = document.getElementById("out1");
+var x1 = makeXHR(out1);
+x1.withCredentials = false;
+x1.send();
+var out2 = document.getElementById("out2");
+var x2 = makeXHR(out2);
+x2.withCredentials = true;
+x2.send();
+        </script>
+    </body>
+</html>
