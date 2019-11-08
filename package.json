@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/thw0rted/issue-examples#readme",
   "dependencies": {
-    "pino": "^5.13.3"
+    "pino": "^5.13.3",
+    "sonic-boom": "github:mcollina/sonic-boom#reopen-if-not-open"
   },
   "devDependencies": {
     "@types/pino": "^5.8.10"
