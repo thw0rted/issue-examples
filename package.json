@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Repro for an issue where browser sends client certs with withCredentials=false",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "public/index.html",
+    "*.pem",
+    "cert.p12"
+  ],
   "scripts": {
     "start": "node index.js"
   },
