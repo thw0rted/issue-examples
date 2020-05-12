@@ -1,0 +1,25 @@
+{
+  "name": "issue-examples",
+  "version": "1.0.0",
+  "description": "Repro for Webpack HTML loader issue with minifying script type attribute",
+  "dependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thw0rted/issue-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thw0rted/issue-examples/issues"
+  },
+  "homepage": "https://github.com/thw0rted/issue-examples#readme"
+}
