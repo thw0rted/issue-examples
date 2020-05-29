@@ -1,0 +1,13 @@
+{
+  "name": "tsd-jsdoc-templates",
+  "version": "0.0.1",
+  "description": "Repro for problems with @template tag",
+  "type": "module",
+  "devDependencies": {
+    "jsdoc": "^3.6.4",
+    "tsd-jsdoc": "^2.5.0"
+  },
+  "scripts": {
+    "build": "jsdoc --configure ts-conf.json"
+  }
+}
