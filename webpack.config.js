@@ -18,6 +18,9 @@ module.exports = {
             template: "./index.html",
             inject: true,
             production: true,
+            minify: {
+                removeScriptTypeAttributes: true,
+            },
         }),
     ]
 }
