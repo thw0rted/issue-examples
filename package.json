@@ -1,0 +1,32 @@
+{
+  "name": "karma-ts-esri",
+  "version": "1.0.0",
+  "description": "Simple repro for an issue importing types from an NPM package",
+  "main": "index.js",
+  "dependencies": {
+    "@esri/arcgis-rest-types": "^2.19.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.14",
+    "@types/karma": "^5.0.0",
+    "karma": "^5.2.3",
+    "karma-jasmine": "^4.0.1",
+    "karma-typescript": "^5.2.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thw0rted/issue-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thw0rted/issue-examples/issues"
+  },
+  "homepage": "https://github.com/thw0rted/issue-examples#readme"
+}
