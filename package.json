@@ -4,15 +4,22 @@
   "description": "Simple repro for an issue importing types from an NPM package",
   "main": "index.js",
   "dependencies": {
-    "@esri/arcgis-rest-types": "^2.19.1"
+    "@esri/arcgis-rest-types": "^3.2.1",
+    "@pnp/sp": "^2.8.0"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.5.14",
-    "@types/karma": "^5.0.0",
-    "karma": "^5.2.3",
+    "@types/jasmine": "^3.8.2",
+    "@types/karma": "^6.3.1",
+    "@types/karma-jasmine-html-reporter": "^1.5.2",
+    "karma": "^6.3.4",
+    "karma-chrome-launcher": "^3.1.0",
     "karma-jasmine": "^4.0.1",
-    "karma-typescript": "^5.2.0",
-    "typescript": "^4.0.3"
+    "karma-jasmine-html-reporter": "^1.7.0",
+    "karma-sourcemap-loader": "^0.3.8",
+    "karma-typescript": "^5.5.1",
+    "karma-typescript-angular2-transform": "^5.5.1",
+    "karma-typescript-es6-transform": "^5.5.1",
+    "typescript": "^4.3.5"
   },
   "scripts": {
     "build": "tsc",

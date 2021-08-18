@@ -1,9 +1,14 @@
 {
     "extends": "./tsconfig.base.json",
-    "files": [ "src/main.ts" ],
     "include": [ "src/**/*.spec.ts" ],
     "compilerOptions": {
+        "baseUrl": "./",
         "noEmitOnError": true,
         "module": "CommonJS",
+        "target": "ES2015",
+        "paths": {
+            "@testing": ["src/testing/index"],
+            "@testing/*": ["src/testing/*"]
+        }
     }
 }

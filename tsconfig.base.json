@@ -1,8 +1,24 @@
 {
     "compilerOptions": {
+        "alwaysStrict": true,
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "module": "esnext",
         "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true,       // required by @pnp/sp
         "sourceMap": true,
-        "target": "esnext",
+        "strictNullChecks": true,
+        "target": "es2018",
     },
     "exclude": [
         "dist",
