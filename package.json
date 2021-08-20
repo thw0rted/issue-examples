@@ -1,0 +1,22 @@
+{
+  "name": "issue-examples",
+  "version": "1.0.0",
+  "description": "A minimal reproduction of an issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thw0rted/issue-examples.git"
+  },
+  "author": "James Bromwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thw0rted/issue-examples/issues"
+  },
+  "homepage": "https://github.com/thw0rted/issue-examples#readme",
+  "devDependencies": {
+    "jasmine": "^3.8.0"
+  }
+}
