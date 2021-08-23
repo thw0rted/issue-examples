@@ -4,8 +4,7 @@
   "description": "Simple repro for an issue importing types from an NPM package",
   "main": "index.js",
   "dependencies": {
-    "@esri/arcgis-rest-types": "^3.2.1",
-    "@pnp/sp": "^2.8.0"
+    "@esri/arcgis-rest-types": "^3.2.1"
   },
   "devDependencies": {
     "@types/jasmine": "^3.8.2",
