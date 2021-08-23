@@ -19,7 +19,8 @@ module.exports = (config) => {
 
         // list of files / patterns to load in the browser
         files: [
-            { pattern: "./src/**/*.ts", type: "js" }
+            { pattern: "./src/**/*.ts", type: "js" },
+            { pattern: "src/**/*.xml", served: true, included: false, watched: false},
         ],
 
 
