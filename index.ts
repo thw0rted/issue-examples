@@ -1,13 +1,13 @@
-import {CesiumTerrainProvider} from "cesium";
-
-export type Providers = {
-    OneProvider: ConstructorParameters<typeof CesiumTerrainProvider>[0],
-};
-
-export type ProviderOpts = {
-    selectedType: keyof Providers;
+export class Foo {
+    el: HTMLElement;
 }
 
-export interface RuntimeConfig {
-    readonly PROVIDER?: ProviderOpts;
+export interface Bar {
+    bazArgs: ConstructorParameters<typeof Baz>[0];
+}
+
+export class Baz {
+    public constructor(opts: {
+        a: boolean;
+    }) { }
 }

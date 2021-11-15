@@ -8,7 +8,8 @@
     "typescript": "^4.4.0"
   },
   "scripts": {
-    "generate": "ts-json-schema-generator --no-type-check --tsconfig tsconfig.json --type RuntimeConfig",
+    "generate-foo": "ts-json-schema-generator --no-type-check --tsconfig tsconfig.json --type Foo",
+    "generate-bar": "ts-json-schema-generator --no-type-check --tsconfig tsconfig.json --type Bar",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/thw0rted/issue-examples/issues"
   },
-  "homepage": "https://github.com/thw0rted/issue-examples#readme",
-  "devDependencies": {
-    "cesium": "^1.87.1"
-  }
+  "homepage": "https://github.com/thw0rted/issue-examples#readme"
 }

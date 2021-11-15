@@ -7,6 +7,20 @@
 			"problemMatcher": [],
 			"label": "npm: generate",
 			"detail": "ts-json-schema-generator --no-type-check --tsconfig tsconfig.json --type RuntimeConfig"
+		},
+		{
+			"type": "npm",
+			"script": "generate-foo",
+			"problemMatcher": [],
+			"label": "npm: generate-foo",
+			"detail": "ts-json-schema-generator --no-type-check --tsconfig tsconfig.json --type Foo"
+		},
+		{
+			"type": "npm",
+			"script": "generate-bar",
+			"problemMatcher": [],
+			"label": "npm: generate-bar",
+			"detail": "ts-json-schema-generator --no-type-check --tsconfig tsconfig.json --type Bar"
 		}
 	]
 }
