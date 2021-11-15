@@ -1,0 +1,27 @@
+{
+  "name": "issue-examples",
+  "version": "1.0.0",
+  "description": "Example of ts-schema issue",
+  "main": "index.js",
+  "dependencies": {
+    "ts-json-schema-generator": "^0.97.0",
+    "typescript": "^4.4.0"
+  },
+  "scripts": {
+    "generate": "ts-json-schema-generator --no-type-check --tsconfig tsconfig.json --type RuntimeConfig",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thw0rted/issue-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thw0rted/issue-examples/issues"
+  },
+  "homepage": "https://github.com/thw0rted/issue-examples#readme",
+  "devDependencies": {
+    "cesium": "^1.87.1"
+  }
+}
