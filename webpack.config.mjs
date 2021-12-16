@@ -46,7 +46,7 @@ const config = {
             use: "@ngtools/webpack",
         }],
     },
-    devtool: "source-map",
+    devtool: "eval-cheap-module-source-map",
 };
 
 export default config;

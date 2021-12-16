@@ -1,5 +1,5 @@
-import { Component } from "@angular/core";
-import { ControlValueAccessor } from "@angular/forms";
+import { Component, forwardRef } from "@angular/core";
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 
 @Component({
     selector: "hello-input",
@@ -9,6 +9,11 @@ import { ControlValueAccessor } from "@angular/forms";
         [ngModel]="_value"
         (ngModelChange)="changed($event)">
     `,
+    providers: [{
+        provide: NG_VALUE_ACCESSOR,
+        multi: true,
+        useExisting: forwardRef(() => HelloInputComponent),
+    }],
 })
 export class HelloInputComponent implements ControlValueAccessor {
 
