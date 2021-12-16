@@ -1,5 +1,5 @@
 import { AngularWebpackPlugin } from "@ngtools/webpack";
-import linkerPlugin from "@angular/compiler-cli/linker/babel"
+// import linkerPlugin from "@angular/compiler-cli/linker/babel"
 import HtmlPlugin from "html-webpack-plugin";
 
 
@@ -39,7 +39,7 @@ const config = {
                 options: {
                     cacheDirectory: true,
                     compact: false,
-                    plugins: [linkerPlugin],
+                    // plugins: [linkerPlugin],
                 }
             },
             resolve: {

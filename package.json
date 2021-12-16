@@ -26,10 +26,12 @@
         "last 4 chrome versions"
     ],
     "devDependencies": {
+        "@angular/compiler": "^12.2.15",
+        "@angular/compiler-cli": "^12.2.15",
         "@babel/core": "^7.16.5",
         "@babel/preset-env": "^7.16.5",
-        "@ngneat/spectator": "^9.0.0",
-        "@ngtools/webpack": "^13.1.2",
+        "@ngneat/spectator": "^7.2.0",
+        "@ngtools/webpack": "^12.2.14",
         "@types/jasmine": "^3.10.2",
         "@types/karma-jasmine-html-reporter": "^1.7.0",
         "@types/webpack-env": "^1.16.3",
@@ -50,10 +52,15 @@
     },
     "private": true,
     "dependencies": {
-        "@angular/forms": "^13.1.1",
-        "@angular/platform-browser-dynamic": "^13.1.1",
+        "@angular/animations": "^12.2.15",
+        "@angular/core": "^12.2.15",
+        "@angular/common": "^12.2.15",
+        "@angular/forms": "^12.2.15",
+        "@angular/platform-browser": "^12.2.15",
+        "@angular/platform-browser-dynamic": "^12.2.15",
+        "@angular/router": "^12.2.15",
         "core-js": "^3.20.0",
-        "rxjs": "^7.4.0",
+        "rxjs": "^6.0.0",
         "zone.js": "^0.11.4"
     }
 }
