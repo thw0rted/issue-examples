@@ -2,6 +2,9 @@ import { AngularWebpackPlugin } from "@ngtools/webpack";
 import linkerPlugin from "@angular/compiler-cli/linker/babel"
 import HtmlPlugin from "html-webpack-plugin";
 
+
+const isTest = process.env.npm_lifecycle_script?.startsWith("karma");
+
 /** @type {import("webpack").Configuration} */
 const config = {
     mode: "development",
@@ -13,7 +16,9 @@ const config = {
         exportsFields: [],
     },
     plugins: [
-        new AngularWebpackPlugin(),
+        new AngularWebpackPlugin({
+            tsconfig: `./tsconfig.${isTest ? "test" : "main"}.json`,
+        }),
         new HtmlPlugin({
             templateContent: `
 <!DOCTYPE html>

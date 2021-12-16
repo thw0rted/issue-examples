@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "src/testing/all_tests.ts",
+        "src/**/*.spec.ts"
+    ],
+    "compilerOptions": {
+        "baseUrl": "./"
+    }
+}

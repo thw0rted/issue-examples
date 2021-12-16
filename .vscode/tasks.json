@@ -7,6 +7,13 @@
 			"problemMatcher": [],
 			"label": "npm: start",
 			"detail": "webpack serve"
+		},
+		{
+			"type": "npm",
+			"script": "test:unit",
+			"problemMatcher": [],
+			"label": "npm: test:unit",
+			"detail": "karma start --no-single-run --browsers Chrome"
 		}
 	]
 }
