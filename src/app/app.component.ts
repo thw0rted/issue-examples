@@ -11,8 +11,8 @@ import { FormControl } from "@angular/forms";
 <section>
 <hello-input [formControl]="fc"></hello-input>
 <input name="formControlPair" type="text" [ngModel]="fc.value" (ngModelChange)="fc.setValue($event)">
-<button type="button" (click)="fc.disable()">Disable</button>
-<button type="button" (click)="fc.enable()">Enable</button>
+<button type="button" mat-button (click)="fc.disable()">Disable</button>
+<button type="button" mat-button (click)="fc.enable()">Enable</button>
 </section>
 <hr/>
 <h2>NgModel</h2>
