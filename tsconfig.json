@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": [],
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "outDir": "build",
+        "skipLibCheck": true,
+        "target": "ES2022",
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

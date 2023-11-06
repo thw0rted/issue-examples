@@ -4,7 +4,7 @@
   "description": "A simple repro for an issue with your library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/thw0rted/issue-examples/issues"
   },
-  "homepage": "https://github.com/thw0rted/issue-examples#readme"
+  "homepage": "https://github.com/thw0rted/issue-examples#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "msw": "^2.0.3",
+    "typescript": "^5.2.2"
+  }
 }
